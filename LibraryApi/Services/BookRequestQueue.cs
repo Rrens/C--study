@@ -4,7 +4,7 @@ namespace LibraryApi.Services
   {
     private readonly Queue<BookBorrowRequest> _queue = new();
     private readonly object _lock = new object();
-    private readonly int _maxCapacity;
+    private readonly int _maxCapacity = 5;
 
     public BookRequestQueue(int maxCapacity = 100)
     {

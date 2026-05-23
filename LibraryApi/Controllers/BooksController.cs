@@ -63,17 +63,17 @@ namespace LibraryApi.Controllers
       return Ok(book);
     }
 
-    [HttpPost("{id:guid}/borrow")]
-    public async Task<IActionResult> BorrowBook([FromRoute] Guid id, [FromBody] string userId)
+    [HttpPost("{UserId:guid}/{BookId:guid}/borrow")]
+    public async Task<IActionResult> BorrowBook([FromRoute] Guid UserId, [FromRoute] Guid BookId)
     {
-      bool queued = _queue.Enqueue(id, userId);
+      bool queued = _queue.Enqueue(BookId, UserId.ToString());
 
       if (!queued)
       {
         return StatusCode(503, "Book borrow request queue is full. Please try again later.");
       }
 
-      return Accepted($"Book borrow request for Book ID {id} by User {userId} has been queued for processing.");
+      return Accepted($"Book borrow request for Book ID {BookId} by User {UserId} has been queued for processing.");
     }
   }
 }

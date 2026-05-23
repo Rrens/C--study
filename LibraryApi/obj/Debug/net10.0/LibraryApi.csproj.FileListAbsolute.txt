@@ -149,3 +149,4 @@
 /Users/rensmac/Documents/belajar/cs/LibraryApi/obj/Debug/net10.0/LibraryApi.pdb
 /Users/rensmac/Documents/belajar/cs/LibraryApi/obj/Debug/net10.0/LibraryApi.genruntimeconfig.cache
 /Users/rensmac/Documents/belajar/cs/LibraryApi/obj/Debug/net10.0/ref/LibraryApi.dll
+/Users/rensmac/Documents/belajar/cs/LibraryApi/obj/Debug/net10.0/LibraryApi.sourcelink.json
