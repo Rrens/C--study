@@ -1,0 +1,3 @@
+dotnet ef migrations add AddUsers
+dotnet ef database update
+dotnet run

@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			Rendy Yusuf Prasetyo - Backend
+			Engineer Portfolio
+		</title>
+		<style>
+			@page {
+			    size: A4;
+			    margin: 15mm 15mm;
+			    @bottom-right {
+			        content: counter(page);
+			        font-family: 'Helvetica Neue', Arial, sans-serif;
+			        font-size: 8pt;
+			        color: #8c96a0;
+			    }
+			}
+
+			body {
+			    font-family: 'Helvetica Neue', Arial, sans-serif;
+			    color: #2c3e50;
+			    background-color: #ffffff;
+			    line-height: 1.4;
+			    font-size: 9.5pt;
+			    margin: 0;
+			    padding: 0;
+			}
+
+			*, *::before, *::after {
+			    box-sizing: border-box;
+			}
+
+			.header-banner {
+			    margin: -15mm -15mm 20px -15mm;
+			    padding: 20px 15mm;
+			    background-color: #1e293b;
+			    color: #ffffff;
+			}
+			.header-banner h1 {
+			    margin: 0 0 4px 0;
+			    font-size: 20pt;
+			    font-weight: 700;
+			    color: #f8fafc;
+			}
+			.header-banner .subtitle {
+			    font-size: 10pt;
+			    color: #38bdf8;
+			    font-weight: 500;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    margin-bottom: 8px;
+			}
+			.header-meta {
+			    font-size: 8.5pt;
+			    color: #cbd5e1;
+			}
+			.header-meta span {
+			    margin-right: 20px;
+			}
+
+			h2.section-title {
+			    font-size: 13pt;
+			    color: #0f172a;
+			    border-left: 4px solid #0284c7;
+			    padding-left: 8px;
+			    margin-top: 0;
+			    margin-bottom: 15px;
+			    text-transform: uppercase;
+			    page-break-after: avoid;
+			}
+
+			/* Table layout used intentionally — Flex/Grid not supported by WeasyPrint */
+			.project-card {
+			    margin-bottom: 20px;
+			    padding-bottom: 15px;
+			    border-bottom: 1px solid #e2e8f0;
+			    page-break-inside: avoid;
+			}
+			.project-card:last-child {
+			    border-bottom: none;
+			    margin-bottom: 0;
+			    padding-bottom: 0;
+			}
+			.project-header {
+			    margin-bottom: 8px;
+			}
+			.project-name {
+			    font-size: 12pt;
+			    font-weight: 700;
+			    color: #0f172a;
+			    margin: 0 0 2px 0;
+			}
+			.project-role {
+			    font-size: 9pt;
+			    font-weight: 600;
+			    color: #0284c7;
+			    text-transform: uppercase;
+			}
+
+			.grid-table {
+			    display: table;
+			    width: 100%;
+			    margin-bottom: 8px;
+			}
+			.grid-row {
+			    display: table-row;
+			}
+			.grid-label {
+			    display: table-cell;
+			    width: 90px;
+			    font-weight: bold;
+			    color: #475569;
+			    padding: 2px 0;
+			    font-size: 9pt;
+			    vertical-align: top;
+			}
+			.grid-value {
+			    display: table-cell;
+			    color: #334155;
+			    padding: 2px 0;
+			    font-size: 9pt;
+			    vertical-align: top;
+			}
+
+			.tech-badge {
+			    display: inline-block;
+			    background-color: #f1f5f9;
+			    color: #334155;
+			    padding: 1px 6px;
+			    border-radius: 4px;
+			    font-size: 8pt;
+			    font-family: monospace;
+			    margin-right: 4px;
+			    margin-bottom: 4px;
+			    border: 1px solid #e2e8f0;
+			}
+
+			.highlight-box {
+			    background-color: #f8fafc;
+			    border-left: 3px solid #10b981;
+			    padding: 8px 12px;
+			    margin-top: 8px;
+			    border-radius: 0 4px 4px 0;
+			}
+			.highlight-title {
+			    font-weight: bold;
+			    color: #065f46;
+			    font-size: 8.5pt;
+			    text-transform: uppercase;
+			    margin-bottom: 2px;
+			}
+			.highlight-box ul {
+			    margin: 0;
+			    padding-left: 14px;
+			    color: #1e293b;
+			    font-size: 9pt;
+			}
+			.highlight-box li {
+			    margin-bottom: 3px;
+			}
+
+			p {
+			    margin: 0 0 6px 0;
+			    text-align: justify;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header-banner">
+			<h1>Rendy Yusuf Prasetyo</h1>
+			<div class="subtitle">
+				Backend Engineer Portfolio
+			</div>
+			<div class="header-meta">
+				<span
+					><strong>Email:</strong>
+					rendy.yusuf.p@gmail.com</span
+				>
+				<span
+					><strong>Location:</strong>
+					Surabaya, Indonesia</span
+				>
+				<span
+					><strong>Focus:</strong>
+					High-Performance APIs &
+					Intelligent Systems</span
+				>
+			</div>
+		</div>
+
+		<h2 class="section-title">
+			Core Engineering Projects
+		</h2>
+
+		<div class="project-card">
+			<div class="project-header">
+				<div class="project-name">
+					Sysmora
+				</div>
+				<div class="project-role">
+					Lead Backend Engineer &
+					Creator
+				</div>
+			</div>
+			<div class="grid-table">
+				<div class="grid-row">
+					<div class="grid-label">
+						Overview:
+					</div>
+					<div class="grid-value">
+						<p>
+							A B2B SaaS platform
+							designed for multi-channel
+							inventory synchronization
+							and real-time financial
+							data consolidation. The
+							system aggregates
+							fragmented transaction
+							data from multiple
+							external e-commerce
+							marketplaces and offline
+							POS terminals into a
+							single unified ledger.
+						</p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Objective:
+					</div>
+					<div class="grid-value">
+						Prevent multi-channel stock
+						allocation conflicts across
+						marketplaces and automate
+						financial reconciliation
+						using a robust background
+						data synchronization
+						architecture.
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Tech Stack:
+					</div>
+					<div class="grid-value">
+						<span class="tech-badge"
+							>PHP</span
+						>
+						<span class="tech-badge"
+							>Laravel Framework</span
+						>
+						<span class="tech-badge"
+							>PostgreSQL</span
+						>
+						<span class="tech-badge"
+							>Redis (Queue &
+							Cache)</span
+						>
+						<span class="tech-badge"
+							>REST APIs</span
+						>
+						<span class="tech-badge"
+							>Docker</span
+						>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Attachments:
+					</div>
+					<div class="grid-value">
+						Database ERD for
+						multi-tenant isolation,
+						Redis queue worker
+						configuration, webhook
+						handler documentation.
+					</div>
+				</div>
+			</div>
+			<div class="highlight-box">
+				<div class="highlight-title">
+					Specific Contributions &
+					Measurable Results
+				</div>
+				<ul>
+					<li>
+						<strong
+							>Async Data Sync
+							Engine:</strong
+						>
+						Engineered a background
+						synchronization layer using
+						Redis-backed Laravel Queues,
+						isolating incoming
+						marketplace webhook traffic
+						spikes to protect the
+						application from HTTP
+						request timeouts.
+					</li>
+					<li>
+						<strong
+							>Idempotency
+							Layer:</strong
+						>
+						Implemented a custom data
+						reconciliation pipeline to
+						ensure all ledger updates
+						are processed idempotently,
+						preventing duplicate entries
+						caused by automatic network
+						retries.
+					</li>
+					<li>
+						<strong
+							>Performance
+							Metrics:</strong
+						>
+						Achieved sub-100ms
+						processing time for local
+						data updates and eliminated
+						stock double-booking gaps in
+						concurrent automated testing
+						scenarios.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-header">
+				<div class="project-name">
+					Intelligent Text-to-SQL
+					Analytics Engine
+				</div>
+				<div class="project-role">
+					R&D Backend & AI Engineer
+				</div>
+			</div>
+			<div class="grid-table">
+				<div class="grid-row">
+					<div class="grid-label">
+						Overview:
+					</div>
+					<div class="grid-value">
+						<p>
+							An experimental middleware
+							engine designed to
+							democratize internal data
+							access. It translates
+							natural language business
+							questions into optimized
+							SQL queries ready for
+							execution against
+							relational databases.
+						</p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Objective:
+					</div>
+					<div class="grid-value">
+						Bridge the gap between
+						non-technical stakeholders
+						and complex relational data
+						schemas, eliminating the
+						need for manual ad-hoc query
+						writing by operations teams.
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Tech Stack:
+					</div>
+					<div class="grid-value">
+						<span class="tech-badge"
+							>Golang</span
+						>
+						<span class="tech-badge"
+							>LLM APIs</span
+						>
+						<span class="tech-badge"
+							>Prompt Engineering</span
+						>
+						<span class="tech-badge"
+							>PostgreSQL</span
+						>
+						<span class="tech-badge"
+							>Context Injection</span
+						>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Attachments:
+					</div>
+					<div class="grid-value">
+						Dynamic schema-mapping
+						architecture blueprint,
+						system prompt configuration,
+						SQL validation suite test
+						logs.
+					</div>
+				</div>
+			</div>
+			<div class="highlight-box">
+				<div class="highlight-title">
+					Specific Contributions &
+					Measurable Results
+				</div>
+				<ul>
+					<li>
+						<strong
+							>Context-Aware Schema
+							Injection:</strong
+						>
+						Built an automated context
+						assembly pipeline that
+						sanitizes and maps database
+						schema metadata for safe
+						injection into the LLM
+						context window without
+						leaking sensitive user row
+						data.
+					</li>
+					<li>
+						<strong
+							>Strict Prompt
+							Engineering:</strong
+						>
+						Formulated standardized
+						system instructions and
+						few-shot examples that
+						constrain the LLM to produce
+						pure SQL code output,
+						preventing model
+						hallucinations or markdown
+						formatting wrappers.
+					</li>
+					<li>
+						<strong
+							>Execution Validation
+							Layer:</strong
+						>
+						Built a dry-run validation
+						middleware that checks
+						generated queries against
+						destructive commands (DROP,
+						DELETE, UPDATE) before
+						executing read-only
+						operations on the target
+						database.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-header">
+				<div class="project-name">
+					Official Tourism Website -
+					Mojokerto City
+				</div>
+				<div class="project-role">
+					Backend Developer
+				</div>
+			</div>
+			<div class="grid-table">
+				<div class="grid-row">
+					<div class="grid-label">
+						Overview:
+					</div>
+					<div class="grid-value">
+						<p>
+							An official regional
+							tourism portal built to
+							digitize information on
+							cultural landmarks, local
+							culinary spots, event
+							calendars, and travel
+							itineraries for the
+							Mojokerto City Government.
+						</p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Objective:
+					</div>
+					<div class="grid-value">
+						Deliver a stable, high-scale
+						platform capable of handling
+						public traffic surges during
+						regional cultural events,
+						while providing a reliable
+						administration panel for
+						content managers.
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Tech Stack:
+					</div>
+					<div class="grid-value">
+						<span class="tech-badge"
+							>PHP</span
+						>
+						<span class="tech-badge"
+							>Laravel Framework</span
+						>
+						<span class="tech-badge"
+							>MySQL</span
+						>
+						<span class="tech-badge"
+							>RESTful APIs</span
+						>
+						<span class="tech-badge"
+							>AdminPanel
+							Integration</span
+						>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Attachments:
+					</div>
+					<div class="grid-value">
+						Public deployment logs, REST
+						API endpoint collection,
+						content management user
+						manual.
+					</div>
+				</div>
+			</div>
+			<div class="highlight-box">
+				<div class="highlight-title">
+					Specific Contributions &
+					Measurable Results
+				</div>
+				<ul>
+					<li>
+						<strong
+							>Content & Media
+							APIs:</strong
+						>
+						Developed high-performance
+						RESTful endpoints to serve
+						structured localization
+						data, tourist attraction
+						geographic coordinates, and
+						multimedia content to the
+						front-end interface.
+					</li>
+					<li>
+						<strong
+							>Secure Management
+							Portal:</strong
+						>
+						Built an intuitive
+						administration backend
+						enabling non-technical
+						government operators to
+						safely update historical
+						texts, upload
+						high-resolution image
+						assets, and publish upcoming
+						event bulletins.
+					</li>
+					<li>
+						<strong
+							>Query & Asset
+							Optimization:</strong
+						>
+						Applied database caching for
+						static regional tourism
+						assets, reducing repeated
+						hits to the primary database
+						and minimizing per-request
+						memory allocation.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-header">
+				<div class="project-name">
+					Enterprise Web & Internal
+					Operations Platforms
+				</div>
+				<div class="project-role">
+					Full-Stack Web Developer (PT.
+					Andromedia Indonesia)
+				</div>
+			</div>
+			<div class="grid-table">
+				<div class="grid-row">
+					<div class="grid-label">
+						Overview:
+					</div>
+					<div class="grid-value">
+						<p>
+							Development and
+							optimization of
+							data-intensive corporate
+							web applications and
+							internal workflow
+							automation tools serving
+							large-scale client needs
+							as a replacement for
+							legacy manual procedures.
+						</p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Objective:
+					</div>
+					<div class="grid-value">
+						Design secure and robust
+						backend REST APIs capable of
+						handling complex business
+						workflows, large relational
+						datasets, and multi-tiered
+						access control.
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Tech Stack:
+					</div>
+					<div class="grid-value">
+						<span class="tech-badge"
+							>Typescript</span
+						>
+						<span class="tech-badge"
+							>PostgreSQL</span
+						>
+						<span class="tech-badge"
+							>PrismaORM</span
+						>
+						<span class="tech-badge"
+							>RESTful APIs</span
+						>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Attachments:
+					</div>
+					<div class="grid-value">
+						API documentation contracts
+						(Swagger/OpenAPI), database
+						optimization logs, corporate
+						compliance reports.
+					</div>
+				</div>
+			</div>
+			<div class="highlight-box">
+				<div class="highlight-title">
+					Specific Contributions &
+					Measurable Results
+				</div>
+				<ul>
+					<li>
+						<strong
+							>Eloquent Performance
+							Tuning:</strong
+						>
+						Optimized large-scale data
+						aggregation endpoints using
+						eager loading and chunking
+						techniques, preventing
+						memory overflow when
+						processing large analytics
+						reports.
+					</li>
+					<li>
+						<strong
+							>Database Schema
+							Refactoring:</strong
+						>
+						Overhauled a client's legacy
+						database schema, applied
+						strategic indexing, and
+						removed redundant
+						subqueries, resulting in
+						reduced CPU utilization
+						during peak hours.
+					</li>
+					<li>
+						<strong
+							>Performance
+							Metrics:</strong
+						>
+						Cut query execution time by
+						up to 40% on the primary
+						transactions table,
+						significantly reducing daily
+						support complaint tickets
+						from users related to system
+						timeout issues.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-header">
+				<div class="project-name">
+					Distributed Infrastructure R&D
+					Homelab
+				</div>
+				<div class="project-role">
+					Systems & DevOps Engineer
+				</div>
+			</div>
+			<div class="grid-table">
+				<div class="grid-row">
+					<div class="grid-label">
+						Overview:
+					</div>
+					<div class="grid-value">
+						<p>
+							An internal bare-metal
+							virtualization environment
+							used to rigorously test
+							high-availability
+							configurations,
+							infrastructure
+							orchestration, system
+							network isolation, and
+							microservices lifecycle
+							management before
+							deploying to public cloud.
+						</p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Objective:
+					</div>
+					<div class="grid-value">
+						Serve as a zero-cloud-cost
+						local testing ground for
+						benchmarking the resilience
+						of stateful services (such
+						as PostgreSQL clusters and
+						Redis caching) against
+						compute failure and network
+						partition scenarios.
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Tech Stack:
+					</div>
+					<div class="grid-value">
+						<span class="tech-badge"
+							>Proxmox VE</span
+						>
+						<span class="tech-badge"
+							>Ubuntu Server</span
+						>
+						<span class="tech-badge"
+							>Docker / Docker
+							Compose</span
+						>
+						<span class="tech-badge"
+							>LXC Containers</span
+						>
+						<span class="tech-badge"
+							>Linux Networking</span
+						>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-label">
+						Attachments:
+					</div>
+					<div class="grid-value">
+						Docker Compose automation
+						repository, internal network
+						topology map, hardware
+						utilization monitoring
+						metrics.
+					</div>
+				</div>
+			</div>
+			<div class="highlight-box">
+				<div class="highlight-title">
+					Specific Contributions &
+					Measurable Results
+				</div>
+				<ul>
+					<li>
+						<strong
+							>Hypervisor
+							Virtualization:</strong
+						>
+						Managed a Proxmox VE node
+						cluster, dynamically
+						balancing compute resource
+						allocation between
+						lightweight LXC containers
+						and full Virtual Machine
+						infrastructure.
+					</li>
+					<li>
+						<strong
+							>Rapid Stack
+							Automation:</strong
+						>
+						Composed modular Docker
+						Compose scripts for instant
+						workspace initialization,
+						cutting provisioning time
+						for isolated ready-to-use
+						relational databases down to
+						seconds.
+					</li>
+					<li>
+						<strong
+							>Performance
+							Baseline:</strong
+						>
+						Maintained a 99.9% uptime
+						track record for the testing
+						environment, establishing a
+						reliable hardware
+						performance baseline for use
+						as a backend application
+						benchmark reference.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
